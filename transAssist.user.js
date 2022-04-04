@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         光辉物语翻译辅助
 // @namespace    hoothin
-// @version      0.2.2
+// @version      0.2.3
 // @description  为光辉物语汉化项目在腾讯文档顶部添加翻译辅助按钮，点击条目后增加翻译直达按钮
 // @author       hoothin
 // @include      https://docs.qq.com/sheet/DWnZ6a2hpUkJRd2JZ*
@@ -85,7 +85,7 @@
         var barLabel = document.querySelector("div.bar-label");
         document.querySelector("div.excel-container").addEventListener("click", e => {
             if(/^C/.test(barLabel.innerText))return;
-            transBody = dbC2sbC(formulaInput.innerText.split("\n")[0].replace(/\<.*?\>/g," "));
+            transBody = dbC2sbC(formulaInput.innerText.split("\n")[0].replace(/\<p\>/g,"\n").replace(/\<.*?\>/g," ")).trim();
             if(transBody){
                 btnOrder.style.display = "";
                 tagCon.innerHTML = "";
@@ -102,17 +102,17 @@
         btnOrder.style.cssText = "position: fixed;top: 10px;width: 100%;z-index: 9;text-align: center;pointer-events: none;display: none";
 
         var transSpan = document.createElement("span");
-        var gooBtn = createTransBtn("Google", () => {
-            window.open(`https://translate.google.cn/?client=gtx&dj=1&q=${transBody}&sl=auto&tl=zh-CN&hl=zh-CN&ie=UTF-8&oe=UTF-8&source=icon&dt=t&dt=bd`,'_blank','height=600,width=800,left=30,top=30,location=no,status=no,toolbar=no,menubar=no,scrollbars=yes');
+        var gooBtn = createTransBtn("Google", (target) => {
+            window.open(`https://translate.google.cn/?client=gtx&dj=1&q=${target}&sl=auto&tl=zh-CN&hl=zh-CN&ie=UTF-8&oe=UTF-8&source=icon&dt=t&dt=bd`,'_blank','height=600,width=800,left=30,top=30,location=no,status=no,toolbar=no,menubar=no,scrollbars=yes');
         });
-        var bdBtn = createTransBtn("Baidu", () => {
-            window.open(`https://fanyi.baidu.com/#auto/zh/${transBody}`,'_blank','height=600,width=1200,left=30,top=30,location=no,status=no,toolbar=no,menubar=no,scrollbars=yes');
+        var bdBtn = createTransBtn("Baidu", (target) => {
+            window.open(`https://fanyi.baidu.com/#auto/zh/${target}`,'_blank','height=600,width=1200,left=30,top=30,location=no,status=no,toolbar=no,menubar=no,scrollbars=yes');
         });
-        var deeplBtn = createTransBtn("Deepl", () => {
-            window.open(`https://www.deepl.com/zh/translator#auto/zh/${transBody}`,'_blank','height=600,width=800,left=30,top=30,location=no,status=no,toolbar=no,menubar=no,scrollbars=yes');
+        var deeplBtn = createTransBtn("Deepl", (target) => {
+            window.open(`https://www.deepl.com/zh/translator#auto/zh/${target}`,'_blank','height=600,width=800,left=30,top=30,location=no,status=no,toolbar=no,menubar=no,scrollbars=yes');
         });
-        var papagoBtn = createTransBtn("Papago", () => {
-            window.open(`https://papago.naver.com/?sk=auto&tk=zh-CN&st=${transBody}`,'_blank','height=600,width=800,left=30,top=30,location=no,status=no,toolbar=no,menubar=no,scrollbars=yes');
+        var papagoBtn = createTransBtn("Papago", (target) => {
+            window.open(`https://papago.naver.com/?sk=auto&tk=zh-CN&st=${target}`,'_blank','height=600,width=800,left=30,top=30,location=no,status=no,toolbar=no,menubar=no,scrollbars=yes');
         });
         transSpan.style.cssText = "padding-right: 5px;pointer-events: all;";
         transSpan.appendChild(gooBtn);
@@ -134,7 +134,7 @@
         transBtn.innerText = serverName;
         transBtn.addEventListener("click", e=>{
             if(transBody){
-                clickFun();
+                clickFun(encodeURIComponent(transBody));
             }
         });
         return transBtn;
@@ -143,7 +143,7 @@
     function checkWord(dictArr, str) {
         dictArr.forEach(target => {
             if(target.length != 3)return;
-            if((target[0] && new RegExp("\\b"+target[0]+"\\b").test(str)) || (target[1] && str.indexOf(target[1]) != -1)){
+            if((target[0] && new RegExp("\\b"+target[0]+"\\b","i").test(str)) || (target[1] && str.indexOf(target[1]) != -1)){
                 createTag(target[2]);
             }
         });
