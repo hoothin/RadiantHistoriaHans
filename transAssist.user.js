@@ -28,10 +28,12 @@
         ["lodging","宿屋","旅馆"],
         ["Forest Square","森の広場","森之广场"],
         ["South Hill","南の高台","南之高台"],
-        ["south hill","南の丘","南之丘"]
+        ["south hill","南の丘","南之丘"],
+        ["sewers","地下水路","下水道"],
+        ["lookout","展望台","展望台"]
     ];
     const wordName = [
-        ["Marco","マルコ","马尔可"],
+        ["Marco","マルコ","马尔科"],
         ["Eruca","エルーカ","艾露卡"],
         ["Selvan","セルバン","塞尔凡"],
         ["Stocke","ストック","斯托克"],
@@ -56,7 +58,9 @@
         ["Fennel","フェンネル","芬内鲁"],
         ["Bram","ブラム","布拉姆"],
         ["Sir Dias","騎士団長ディアス","骑士团长迪亚斯"],
-        ["Garland","ガーランド","加兰德"]
+        ["Garland","ガーランド","加兰德"],
+        ["rebel troops","反乱軍","叛军"],
+        ["King Viktor","ヴィクトール様","维克托国王"]
     ];
     const wordItem = [
         ["Divine Water","神聖水","圣水"],
@@ -68,7 +72,9 @@
         ["thaumatech","魔動機械","魔动机械"],
         ["Element Shell","エレメントシェル","元素外壳"],
         ["Celes Branch","セレスのえだ","赛雷斯之枝"],
-        ["Thaumachine","魔動兵","魔动兵"]
+        ["Thaumachine","魔動兵","魔动兵"],
+        ["ivy","","藤蔓"],
+        ["produce","食材","食材"]
     ];
     const wordOther = [
         ["White Chronicle","白示録","白示录"],
