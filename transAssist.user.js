@@ -63,7 +63,8 @@
         ["rebel troops","反乱軍","叛军"],
         ["King Viktor","ヴィクトール様","维克托国王"],
         ["High Colonel Dias","ディアス将軍","迪亚斯将军"],
-        ["Hilster","ヒルスター","希尔斯特"]
+        ["Hilster","ヒルスター","希尔斯特"],
+        ["Heiss","ハイス","海斯"]
     ];
     const wordItem = [
         ["Divine Water","神聖水","圣水"],
