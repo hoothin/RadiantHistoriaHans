@@ -30,7 +30,8 @@
         ["South Hill","南の高台","南之高台"],
         ["south hill","南の丘","南之丘"],
         ["sewers","地下水路","下水道"],
-        ["lookout","展望台","展望台"]
+        ["lookout","展望台","展望台"],
+        ["Lazvil Hills","ラズヴィル丘陵","拉斯维尔丘陵"]
     ];
     const wordName = [
         ["Marco","マルコ","马尔科"],
@@ -60,7 +61,9 @@
         ["Sir Dias","騎士団長ディアス","骑士团长迪亚斯"],
         ["Garland","ガーランド","加兰德"],
         ["rebel troops","反乱軍","叛军"],
-        ["King Viktor","ヴィクトール様","维克托国王"]
+        ["King Viktor","ヴィクトール様","维克托国王"],
+        ["High Colonel Dias","ディアス将軍","迪亚斯将军"],
+        ["Hilster","ヒルスター","希尔斯特"]
     ];
     const wordItem = [
         ["Divine Water","神聖水","圣水"],
@@ -82,7 +85,9 @@
         ["swordsman","剣士","剑士"],
         ["possible world","可能性世界","可能性世界"],
         ["node","刻印","刻印"],
-        ["Alistellians","","阿里斯特尔人"]
+        ["Alistellians","","阿里斯特尔人"],
+        ["Beastkind","獣人","兽人"],
+        ["giant boar","大イノシシ","大野猪"]
     ];
     var transBody = "";
     var tagCon,btnOrder;
