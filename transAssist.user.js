@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         光辉物语翻译辅助
 // @namespace    hoothin
-// @version      0.2.3
+// @version      0.2.4
 // @description  为光辉物语汉化项目在腾讯文档顶部添加翻译辅助按钮，点击条目后增加翻译直达按钮
 // @author       hoothin
 // @include      https://docs.qq.com/sheet/DWnZ6a2hpUkJRd2JZ*
@@ -31,7 +31,11 @@
         ["south hill","南の丘","南之丘"],
         ["sewers","地下水路","下水道"],
         ["lookout","展望台","展望台"],
-        ["Lazvil Hills","ラズヴィル丘陵","拉斯维尔丘陵"]
+        ["Lazvil Hills","ラズヴィル丘陵","拉斯维尔丘陵"],
+        ["Sand Fortress","砂の砦","砂之要塞"],
+        ["Judgement Cliffs","裁きの断崖","裁决断崖"],
+        ["","コルネ","科恩"],
+        ["","秘密の場所","秘密基地"]
     ];
     const wordName = [
         ["Marco","マルコ","马尔科"],
@@ -64,7 +68,19 @@
         ["King Viktor","ヴィクトール様","维克托国王"],
         ["High Colonel Dias","ディアス将軍","迪亚斯将军"],
         ["Hilster","ヒルスター","希尔斯特"],
-        ["Heiss","ハイス","海斯"]
+        ["Heiss","ハイス","海斯"],
+        ["Desert Crows","砂漠のカラス","沙漠乌鸦"],
+        ["thieves","怪盗","怪盗"],
+        ["Ricky","リッキー","瑞奇"],
+        ["troops","従士隊","侍从部队"],
+        ["Pierre","","皮埃尔"],
+        ["","新兵部隊","新兵部队"],
+        ["Raynie","レイニー","蕾妮"],
+        ["Valkyrie","戦女神","女武神"],
+        ["Lt. General Raul","ラウル","劳尔中将"],
+        ["Desert Crow","砂漠のカラス","砂漠之鸦"],
+        ["Golhda","ゴルダ","戈尔达"],
+        ["Kaizan","カイザン","凯赞"]
     ];
     const wordItem = [
         ["Divine Water","神聖水","圣水"],
@@ -78,7 +94,13 @@
         ["Celes Branch","セレスのえだ","赛雷斯之枝"],
         ["Thaumachine","魔動兵","魔动兵"],
         ["ivy","","藤蔓"],
-        ["produce","食材","食材"]
+        ["produce","食材","食材"],
+        ["soothing balm","","舒缓香膏"],
+        ["charm","","护身符"],
+        ["Herbal Tea","","药草茶"],
+        ["Holy Water","","复苏之水"],
+        ["Almakalite","アルマラカイト","孔雀石"],
+        ["Withered Branch","かわいた木","干枯树枝"]
     ];
     const wordOther = [
         ["White Chronicle","白示録","白示录"],
@@ -88,7 +110,14 @@
         ["node","刻印","刻印"],
         ["Alistellians","","阿里斯特尔人"],
         ["Beastkind","獣人","兽人"],
-        ["giant boar","大イノシシ","大野猪"]
+        ["giant boar","大イノシシ","大野猪"],
+        ["skills","","武技"],
+        ["goblin","ゴブリン","哥布林"],
+        ["change","","变换"],
+        ["Mana","マナ","法力"],
+        ["timeline","","时间线"],
+        ["obtained","手に入れた","获得"],
+        ["White Page","白示録の切れ端","白示录的残页"]
     ];
     var transBody = "";
     var tagCon,btnOrder;
