@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         光辉物语翻译辅助
 // @namespace    hoothin
-// @version      0.2.4
+// @version      0.2.5
 // @description  为光辉物语汉化项目在腾讯文档顶部添加翻译辅助按钮，点击条目后增加翻译直达按钮
 // @author       hoothin
 // @include      https://docs.qq.com/sheet/DWnZ6a2hpUkJRd2JZ*
@@ -117,7 +117,8 @@
         ["Mana","マナ","法力"],
         ["timeline","","时间线"],
         ["obtained","手に入れた","获得"],
-        ["White Page","白示録の切れ端","白示录的残页"]
+        ["White Page","白示録の切れ端","白示录的残页"],
+        ["sword dancing","剣舞","剑舞"]
     ];
     var transBody = "";
     var tagCon,btnOrder;
@@ -184,7 +185,7 @@
     function checkWord(dictArr, str) {
         dictArr.forEach(target => {
             if(target.length != 3)return;
-            if((target[0] && new RegExp("\\b"+target[0]+"\\b","i").test(str)) || (target[1] && str.indexOf(target[1]) != -1)){
+            if((target[0] && new RegExp("\\b"+target[0]+"['s]*\\b","i").test(str)) || (target[1] && str.indexOf(target[1]) != -1)){
                 createTag(target[2]);
             }
         });
