@@ -80,7 +80,13 @@
         ["Lt. General Raul","ラウル","劳尔中将"],
         ["Desert Crow","砂漠のカラス","砂漠之鸦"],
         ["Golhda","ゴルダ","戈尔达"],
-        ["Kaizan","カイザン","凯赞"]
+        ["Kaizan","カイザン","凯赞"],
+        ["Vanoss","バノッサ","瓦诺萨"],
+        ["Gutral","ブルート","古特尔"],
+        ["Gafka","ガフカ","加夫卡"],
+        ["Bergas","ベルガ","贝尔加"],
+        ["Galva","ガルヴァ","加尔瓦"],
+        ["Lieutenant Stocke","ストック中尉","斯托克中尉"]
     ];
     const wordItem = [
         ["Divine Water","神聖水","圣水"],
@@ -100,7 +106,9 @@
         ["Herbal Tea","","药草茶"],
         ["Holy Water","","复苏之水"],
         ["Almakalite","アルマラカイト","孔雀石"],
-        ["Withered Branch","かわいた木","干枯树枝"]
+        ["Withered Branch","かわいた木","干枯树枝"],
+        ["Beast God's Nail","獣神の爪","兽神之爪"],
+        ["senior disciple","兄弟子","大弟子"]
     ];
     const wordOther = [
         ["White Chronicle","白示録","白示录"],
