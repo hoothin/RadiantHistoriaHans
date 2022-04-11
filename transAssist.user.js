@@ -35,7 +35,8 @@
         ["Sand Fortress","砂の砦","砂之要塞"],
         ["Judgement Cliffs","裁きの断崖","裁决断崖"],
         ["","コルネ","科恩"],
-        ["","秘密の場所","秘密基地"]
+        ["","秘密の場所","秘密基地"],
+        ["commercial district","商業区","商业区"]
     ];
     const wordName = [
         ["Marco","マルコ","马尔科"],
@@ -86,7 +87,10 @@
         ["Gafka","ガフカ","加夫卡"],
         ["Bergas","ベルガ","贝尔加"],
         ["Galva","ガルヴァ","加尔瓦"],
-        ["Lieutenant Stocke","ストック中尉","斯托克中尉"]
+        ["Lieutenant Stocke","ストック中尉","斯托克中尉"],
+        ["Sergeant","副隊長","副队长"],
+        ["Rosch's brigade","ロッシュ隊","罗施部队"],
+        ["Anna","アンナ","安娜"]
     ];
     const wordItem = [
         ["Divine Water","神聖水","圣水"],
@@ -126,7 +130,9 @@
         ["timeline","","时间线"],
         ["obtained","手に入れた","获得"],
         ["White Page","白示録の切れ端","白示录的残页"],
-        ["sword dancing","剣舞","剑舞"]
+        ["sword dancing","剣舞","剑舞"],
+        ["Gutral","ブルート","猩人"],
+        ["Satyros","サテュロス","羊人"]
     ];
     var transBody = "";
     var tagCon,btnOrder;
