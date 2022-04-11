@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         光辉物语翻译辅助
 // @namespace    hoothin
-// @version      0.2.5
+// @version      0.2.6
 // @description  为光辉物语汉化项目在腾讯文档顶部添加翻译辅助按钮，点击条目后增加翻译直达按钮
 // @author       hoothin
 // @include      https://docs.qq.com/sheet/DWnZ6a2hpUkJRd2JZ*
@@ -48,14 +48,14 @@
         ["Sir Dias","ディアス様","迪亚斯爵士"],
         ["Protea","プロテア","普罗蒂亚"],
         ["Resistance","レジスタンス","抵抗军"],
-        ["Queen","Protea","普罗蒂亚女王"],
+        ["Queen Protea","プロテア女王","普罗蒂亚女王"],
         ["","ウィル","威尔"],
         ["Princess Eruca","","艾露卡王女"],
-        ["Lady Eruca","","艾露卡大人"],
+        ["Lady Eruca","エルーカ様","艾露卡大人"],
         ["Count Selvan","セルバン伯爵","塞尔凡伯爵"],
         ["Prophet Noah","ノア様","诺亚先知"],
-        ["Liese","","莉丝"],
-        ["Rosch","","罗施"],
+        ["Liese","リーズ","莉丝"],
+        ["Rosch","ロッシュ","罗施"],
         ["Field Marshal Viola","ビオラ准将","薇奥拉准将"],
         ["Aht","アト","阿托"],
         ["Granorg army","グランオルグ騎士団","格兰奥冈骑士团"],
@@ -90,7 +90,9 @@
         ["Lieutenant Stocke","ストック中尉","斯托克中尉"],
         ["Sergeant","副隊長","副队长"],
         ["Rosch's brigade","ロッシュ隊","罗施部队"],
-        ["Anna","アンナ","安娜"]
+        ["Anna","アンナ","安娜"],
+        ["Nemesia","ネメシア","妮米西亚"],
+        ["Ernst","エルンスト","恩斯特"]
     ];
     const wordItem = [
         ["Divine Water","神聖水","圣水"],
@@ -113,7 +115,8 @@
         ["Withered Branch","かわいた木","干枯树枝"],
         ["Beast God's Nail","獣神の爪","兽神之爪"],
         ["senior disciple","兄弟子","大弟子"],
-        ["Etherion","エーテリオン","以太宝石"]
+        ["Etherion","エーテリオン","以太宝石"],
+        ["monocle","モノクル","单片眼镜"]
     ];
     const wordOther = [
         ["White Chronicle","白示録","白示录"],
