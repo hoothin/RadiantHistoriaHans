@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         光辉物语翻译辅助
 // @namespace    hoothin
-// @version      0.2.6
+// @version      0.2.7
 // @description  为光辉物语汉化项目在腾讯文档顶部添加翻译辅助按钮，点击条目后增加翻译直达按钮
 // @author       hoothin
 // @include      https://docs.qq.com/sheet/DWnZ6a2hpUkJRd2JZ*
@@ -92,7 +92,9 @@
         ["Rosch's brigade","ロッシュ隊","罗施部队"],
         ["Anna","アンナ","安娜"],
         ["Nemesia","ネメシア","妮米西亚"],
-        ["Ernst","エルンスト","恩斯特"]
+        ["Ernst","エルンスト","恩斯特"],
+        ["Lippti","リプティ","莉普缇"],
+        ["Teo","ティオ","提奥"]
     ];
     const wordItem = [
         ["Divine Water","神聖水","圣水"],
