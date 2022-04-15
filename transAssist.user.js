@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         光辉物语翻译辅助
 // @namespace    hoothin
-// @version      0.2.7
+// @version      0.2.8
 // @description  为光辉物语汉化项目在腾讯文档顶部添加翻译辅助按钮，点击条目后增加翻译直达按钮
 // @author       hoothin
 // @include      https://docs.qq.com/sheet/DWnZ6a2hpUkJRd2JZ*
@@ -36,7 +36,8 @@
         ["Judgement Cliffs","裁きの断崖","裁决断崖"],
         ["","コルネ","科恩"],
         ["","秘密の場所","秘密基地"],
-        ["commercial district","商業区","商业区"]
+        ["commercial district","商業区","商业区"],
+        ["Skalla","スカラ","斯卡拉"]
     ];
     const wordName = [
         ["Marco","マルコ","马尔科"],
@@ -94,7 +95,9 @@
         ["Nemesia","ネメシア","妮米西亚"],
         ["Ernst","エルンスト","恩斯特"],
         ["Lippti","リプティ","莉普缇"],
-        ["Teo","ティオ","提奥"]
+        ["Teo","ティオ","提奥"],
+        ["General Hugo","ヒューゴ大将","雨果大将"],
+        ["Young Lion","","幼狮"]
     ];
     const wordItem = [
         ["Divine Water","神聖水","圣水"],
@@ -118,7 +121,8 @@
         ["Beast God's Nail","獣神の爪","兽神之爪"],
         ["senior disciple","兄弟子","大弟子"],
         ["Etherion","エーテリオン","以太宝石"],
-        ["monocle","モノクル","单片眼镜"]
+        ["monocle","モノクル","单片眼镜"],
+        ["Goblin Killer","ゴブリンころし","哥布林杀手"]
     ];
     const wordOther = [
         ["White Chronicle","白示録","白示录"],
