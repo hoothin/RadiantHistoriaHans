@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         光辉物语翻译辅助
 // @namespace    hoothin
-// @version      0.2.8
+// @version      0.2.9
 // @description  为光辉物语汉化项目在腾讯文档顶部添加翻译辅助按钮，点击条目后增加翻译直达按钮
 // @author       hoothin
 // @include      https://docs.qq.com/sheet/DWnZ6a2hpUkJRd2JZ*
@@ -37,7 +37,10 @@
         ["","コルネ","科恩"],
         ["","秘密の場所","秘密基地"],
         ["commercial district","商業区","商业区"],
-        ["Skalla","スカラ","斯卡拉"]
+        ["Skalla","スカラ","斯卡拉"],
+        ["Itolia","イトリア","伊托利亚"],
+        ["Itolia Wasteland","イトリア荒野","伊托利亚荒野"],
+        ["","書の迷宮","书之迷宫"]
     ];
     const wordName = [
         ["Marco","マルコ","马尔科"],
