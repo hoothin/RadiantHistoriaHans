@@ -40,7 +40,8 @@
         ["Skalla","スカラ","斯卡拉"],
         ["Itolia","イトリア","伊托利亚"],
         ["Itolia Wasteland","イトリア荒野","伊托利亚荒野"],
-        ["","書の迷宮","书之迷宫"]
+        ["","書の迷宮","书之迷宫"],
+        ["Celestia","セレスティア","塞拉斯提亚"]
     ];
     const wordName = [
         ["Marco","マルコ","马尔科"],
@@ -100,7 +101,13 @@
         ["Lippti","リプティ","莉普缇"],
         ["Teo","ティオ","提奥"],
         ["General Hugo","ヒューゴ大将","雨果大将"],
-        ["Young Lion","","幼狮"]
+        ["Young Lion","","幼狮"],
+        ["Tarquin","タルキン","塔昆"],
+        ["Ditto","ディトー","迪托"],
+        ["Captain Rosch","ロッシュ隊長","罗施队长"],
+        ["Sergeant","中尉","中尉"],
+        ["Sergeant","少尉","少尉"],
+        ["Lieutenant","","中尉"]
     ];
     const wordItem = [
         ["Divine Water","神聖水","圣水"],
@@ -125,7 +132,9 @@
         ["senior disciple","兄弟子","大弟子"],
         ["Etherion","エーテリオン","以太宝石"],
         ["monocle","モノクル","单片眼镜"],
-        ["Goblin Killer","ゴブリンころし","哥布林杀手"]
+        ["Goblin Killer","ゴブリンころし","哥布林杀手"],
+        ["Anti-Sleep","アンチスリープ","防睡眠剂"],
+        ["Mana Crystal","マナの結晶","法力水晶"]
     ];
     const wordOther = [
         ["White Chronicle","白示録","白示录"],
@@ -145,7 +154,9 @@
         ["White Page","白示録の切れ端","白示录的残页"],
         ["sword dancing","剣舞","剑舞"],
         ["Gutral","ブルート","猩人"],
-        ["Satyros","サテュロス","羊人"]
+        ["Satyros","サテュロス","羊人"],
+        ["shaman","シャーマン","萨满"],
+        ["joined the party","パーティに加わった","加入了你的队伍"]
     ];
     var transBody = "";
     var tagCon,btnOrder;
