@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         光辉物语翻译辅助
 // @namespace    hoothin
-// @version      0.2.9
+// @version      0.3
 // @description  为光辉物语汉化项目在腾讯文档顶部添加翻译辅助按钮，点击条目后增加翻译直达按钮
 // @author       hoothin
 // @include      https://docs.qq.com/sheet/DWnZ6a2hpUkJRd2JZ*
@@ -107,7 +107,8 @@
         ["Captain Rosch","ロッシュ隊長","罗施队长"],
         ["Sergeant","中尉","中尉"],
         ["Sergeant","少尉","少尉"],
-        ["Lieutenant","","中尉"]
+        ["Lieutenant","","中尉"],
+        ["Cedric","","塞德里克"]
     ];
     const wordItem = [
         ["Divine Water","神聖水","圣水"],
@@ -159,12 +160,15 @@
         ["joined the party","パーティに加わった","加入了你的队伍"]
     ];
     var transBody = "";
-    var tagCon,btnOrder;
+    var tagCon,btnOrder,txtCount;
     function initListener() {
         var formulaInput = document.querySelector("div.formula-input");
         var barLabel = document.querySelector("div.bar-label");
         document.querySelector("div.excel-container").addEventListener("click", e => {
-            if(/^C/.test(barLabel.innerText))return;
+            if(/^C/.test(barLabel.innerText)){
+                txtCount.innerText = formulaInput.innerText.trim().length;
+                return;
+            }
             transBody = dbC2sbC(formulaInput.innerText.split("\n")[0].replace(/\<p\>/g,"\n").replace(/\<.*?\>/g," ")).trim();
             if(transBody){
                 btnOrder.style.display = "";
@@ -204,6 +208,9 @@
         tagCon = document.createElement("span");
         tagCon.style.pointerEvents="all";
         btnOrder.appendChild(tagCon);
+        txtCount = document.createElement("span");
+        txtCount.style.margin = "10px";
+        btnOrder.appendChild(txtCount);
 
         document.body.appendChild(btnOrder);
     }
