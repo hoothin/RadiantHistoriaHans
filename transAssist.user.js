@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         光辉物语翻译辅助
 // @namespace    hoothin
-// @version      0.3.1
+// @version      0.3.2
 // @description  为光辉物语汉化项目在腾讯文档顶部添加翻译辅助按钮，点击条目后增加翻译直达按钮
 // @author       hoothin
 // @include      https://docs.qq.com/sheet/DWnZ6a2hpUkJRd2JZ*
@@ -109,7 +109,9 @@
         ["Sergeant","少尉","少尉"],
         ["Lieutenant","","中尉"],
         ["Cedric","","塞德里克"],
-        ["Samra","サムラ","萨姆拉"]
+        ["Samra","サムラ","萨姆拉"],
+        ["Wand","ワンド","万德"],
+        ["Sonja","ソニア","索尼娅"]
     ];
     const wordItem = [
         ["Divine Water","神聖水","圣水"],
@@ -137,7 +139,8 @@
         ["Goblin Killer","ゴブリンころし","哥布林杀手"],
         ["Anti-Sleep","アンチスリープ","防睡眠剂"],
         ["Mana Crystal","マナの結晶","法力水晶"],
-        ["Artifact","アーティファクト","神器"]
+        ["Artifact","アーティファクト","神器"],
+        ["conut","コルナッツ","科恩果"]
     ];
     const wordOther = [
         ["White Chronicle","白示録","白示录"],
