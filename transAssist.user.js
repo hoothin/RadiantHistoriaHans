@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         光辉物语翻译辅助
 // @namespace    hoothin
-// @version      0.3.2
+// @version      0.3.3
 // @description  为光辉物语汉化项目在腾讯文档顶部添加翻译辅助按钮，点击条目后增加翻译直达按钮
 // @author       hoothin
-// @include      https://docs.qq.com/sheet/DWnZ6a2hpUkJRd2JZ*
+// @match        https://docs.qq.com/sheet/DWnZ6a2hpUkJRd2JZ*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        GM_setClipboard
 // @license      MIT License
@@ -140,7 +140,8 @@
         ["Anti-Sleep","アンチスリープ","防睡眠剂"],
         ["Mana Crystal","マナの結晶","法力水晶"],
         ["Artifact","アーティファクト","神器"],
-        ["conut","コルナッツ","科恩果"]
+        ["conut","コルナッツ","科恩果"],
+        ["Alma coal","アルマ石炭","阿尔玛石炭"]
     ];
     const wordOther = [
         ["White Chronicle","白示録","白示录"],
@@ -174,7 +175,10 @@
                 txtCount.innerText = formulaInput.innerText.trim().length;
                 return;
             }
-            transBody = dbC2sbC(formulaInput.innerText.split("\n")[0].replace(/\<p\>/g,"\n").replace(/\<.*?\>/g," ")).trim();
+            let targetText = formulaInput.innerText.split("\n");
+            targetText = targetText.slice(0, parseInt(targetText.length - 2));
+            targetText = targetText.join("\n").replace(/\<p\>/g,"\n").replace(/\<.*?\>/g," ");
+            transBody = dbC2sbC(targetText).trim();
             if(transBody){
                 btnOrder.style.display = "";
                 tagCon.innerHTML = "";
