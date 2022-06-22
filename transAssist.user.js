@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         光辉物语翻译辅助
 // @namespace    hoothin
-// @version      0.3.5
+// @version      0.3.6
 // @description  为光辉物语汉化项目在腾讯文档顶部添加翻译辅助按钮，点击条目后增加翻译直达按钮
 // @author       hoothin
 // @match        https://docs.qq.com/sheet/DWnZ6a2hpUkJRd2JZ*
@@ -169,14 +169,14 @@
     var tagCon,btnOrder,txtCount;
     function initListener() {
         let container = document.querySelector("div.excel-container");
-        if (!container) {
+        let formulaInput = document.querySelector("div.formula-input");
+        let barLabel = document.querySelector("div.bar-label");
+        if (!container || !formulaInput || !barLabel) {
             setTimeout(() => {
                 initListener();
             }, 500);
             return;
         }
-        var formulaInput = document.querySelector("div.formula-input");
-        var barLabel = document.querySelector("div.bar-label");
         container.addEventListener("click", e => {
             if(/^C/.test(barLabel.innerText)){
                 txtCount.innerText = formulaInput.innerText.trim().length;
