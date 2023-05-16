@@ -1,5 +1,6 @@
 # 3DS光辉物语汉化笔记
-招募日翻英翻 QQ群 20550973
+招募日翻英翻 [QQ群 20550973](https://qm.qq.com/cgi-bin/qm/qr?k=SXeZmqVeHBUv2mI75bT_PdnZ4-JERrZn&jump_from=webapi&authKey=KfHn7WI2MBqr4BOOkbDYMi9gDB36ZmFURRgEhjeli+oLueNwocS618YQFh0e+D3K)
+---
 
 照目前的人手和进度，估计没个十年出不来了
 ![img](main.jpg)
@@ -34,6 +35,7 @@
     4.  [提取系统文本](#org424d84c)
     5.  [根据翻译后csv导入文本](#org7a4c06f)
     6.  [根据零碎文本生成映射shift-jis代码](#orgd90c020)
+6.  [其他汉化笔记](#org49901d3)
 
 
 
@@ -236,3 +238,9 @@ textTableImport.py
 
 convertZh2Jis.py
 
+
+<a id="org49901d3"></a>
+
+# 其他汉化笔记
+
+[刺客信条2探索](https://github.com/hoothin/AC-II-Discovery-Hans)
